@@ -1,0 +1,311 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E6BFB9115ACBBAB00101AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6BFB9015ACBBAB00101AC9 /* UIKit.framework */; };
+		7E6BFB9315ACBBAB00101AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6BFB9215ACBBAB00101AC9 /* Foundation.framework */; };
+		7E6BFB9515ACBBAB00101AC9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6BFB9415ACBBAB00101AC9 /* CoreGraphics.framework */; };
+		7E6BFB9B15ACBBAB00101AC9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E6BFB9915ACBBAB00101AC9 /* InfoPlist.strings */; };
+		7E6BFB9D15ACBBAB00101AC9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BFB9C15ACBBAB00101AC9 /* main.m */; };
+		7E6BFBA115ACBBAB00101AC9 /* GCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BFBA015ACBBAB00101AC9 /* GCAppDelegate.m */; };
+		7E6BFBA415ACBBAB00101AC9 /* GCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BFBA315ACBBAB00101AC9 /* GCViewController.m */; };
+		7E6BFBA715ACBBAB00101AC9 /* GCViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E6BFBA515ACBBAB00101AC9 /* GCViewController_iPhone.xib */; };
+		7E6BFBAA15ACBBAB00101AC9 /* GCViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E6BFBA815ACBBAB00101AC9 /* GCViewController_iPad.xib */; };
+		7E6BFBB115ACBD7700101AC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6BFBB015ACBD7700101AC9 /* QuartzCore.framework */; };
+		7E6BFBB415ACBED800101AC9 /* GCGPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BFBB315ACBED800101AC9 /* GCGPSController.m */; };
+		7E6BFBB615ACBEEC00101AC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6BFBB515ACBEEC00101AC9 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E6BFB8C15ACBBAB00101AC9 /* Gaia Compass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Gaia Compass.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E6BFB9015ACBBAB00101AC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E6BFB9215ACBBAB00101AC9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E6BFB9415ACBBAB00101AC9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E6BFB9815ACBBAB00101AC9 /* Gaia Compass-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Gaia Compass-Info.plist"; sourceTree = "<group>"; };
+		7E6BFB9A15ACBBAB00101AC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E6BFB9C15ACBBAB00101AC9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E6BFB9E15ACBBAB00101AC9 /* Gaia Compass-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Gaia Compass-Prefix.pch"; sourceTree = "<group>"; };
+		7E6BFB9F15ACBBAB00101AC9 /* GCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCAppDelegate.h; sourceTree = "<group>"; };
+		7E6BFBA015ACBBAB00101AC9 /* GCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCAppDelegate.m; sourceTree = "<group>"; };
+		7E6BFBA215ACBBAB00101AC9 /* GCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCViewController.h; sourceTree = "<group>"; };
+		7E6BFBA315ACBBAB00101AC9 /* GCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCViewController.m; sourceTree = "<group>"; };
+		7E6BFBA615ACBBAB00101AC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GCViewController_iPhone.xib; sourceTree = "<group>"; };
+		7E6BFBA915ACBBAB00101AC9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/GCViewController_iPad.xib; sourceTree = "<group>"; };
+		7E6BFBB015ACBD7700101AC9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E6BFBB215ACBED800101AC9 /* GCGPSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCGPSController.h; sourceTree = "<group>"; };
+		7E6BFBB315ACBED800101AC9 /* GCGPSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCGPSController.m; sourceTree = "<group>"; };
+		7E6BFBB515ACBEEC00101AC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E6BFB8915ACBBAB00101AC9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6BFBB615ACBEEC00101AC9 /* CoreLocation.framework in Frameworks */,
+				7E6BFBB115ACBD7700101AC9 /* QuartzCore.framework in Frameworks */,
+				7E6BFB9115ACBBAB00101AC9 /* UIKit.framework in Frameworks */,
+				7E6BFB9315ACBBAB00101AC9 /* Foundation.framework in Frameworks */,
+				7E6BFB9515ACBBAB00101AC9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E6BFB8115ACBBAB00101AC9 = {
+			isa = PBXGroup;
+			children = (
+				7E6BFBB515ACBEEC00101AC9 /* CoreLocation.framework */,
+				7E6BFBB015ACBD7700101AC9 /* QuartzCore.framework */,
+				7E6BFB9615ACBBAB00101AC9 /* Gaia Compass */,
+				7E6BFB8F15ACBBAB00101AC9 /* Frameworks */,
+				7E6BFB8D15ACBBAB00101AC9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E6BFB8D15ACBBAB00101AC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E6BFB8C15ACBBAB00101AC9 /* Gaia Compass.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E6BFB8F15ACBBAB00101AC9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E6BFB9015ACBBAB00101AC9 /* UIKit.framework */,
+				7E6BFB9215ACBBAB00101AC9 /* Foundation.framework */,
+				7E6BFB9415ACBBAB00101AC9 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E6BFB9615ACBBAB00101AC9 /* Gaia Compass */ = {
+			isa = PBXGroup;
+			children = (
+				7E6BFB9F15ACBBAB00101AC9 /* GCAppDelegate.h */,
+				7E6BFBA015ACBBAB00101AC9 /* GCAppDelegate.m */,
+				7E6BFBA215ACBBAB00101AC9 /* GCViewController.h */,
+				7E6BFBA315ACBBAB00101AC9 /* GCViewController.m */,
+				7E6BFBA515ACBBAB00101AC9 /* GCViewController_iPhone.xib */,
+				7E6BFBA815ACBBAB00101AC9 /* GCViewController_iPad.xib */,
+				7E6BFB9715ACBBAB00101AC9 /* Supporting Files */,
+				7E6BFBB215ACBED800101AC9 /* GCGPSController.h */,
+				7E6BFBB315ACBED800101AC9 /* GCGPSController.m */,
+			);
+			path = "Gaia Compass";
+			sourceTree = "<group>";
+		};
+		7E6BFB9715ACBBAB00101AC9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E6BFB9815ACBBAB00101AC9 /* Gaia Compass-Info.plist */,
+				7E6BFB9915ACBBAB00101AC9 /* InfoPlist.strings */,
+				7E6BFB9C15ACBBAB00101AC9 /* main.m */,
+				7E6BFB9E15ACBBAB00101AC9 /* Gaia Compass-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E6BFB8B15ACBBAB00101AC9 /* Gaia Compass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E6BFBAD15ACBBAB00101AC9 /* Build configuration list for PBXNativeTarget "Gaia Compass" */;
+			buildPhases = (
+				7E6BFB8815ACBBAB00101AC9 /* Sources */,
+				7E6BFB8915ACBBAB00101AC9 /* Frameworks */,
+				7E6BFB8A15ACBBAB00101AC9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Gaia Compass";
+			productName = "Gaia Compass";
+			productReference = 7E6BFB8C15ACBBAB00101AC9 /* Gaia Compass.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E6BFB8315ACBBAB00101AC9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GC;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "UC Berkeley";
+			};
+			buildConfigurationList = 7E6BFB8615ACBBAB00101AC9 /* Build configuration list for PBXProject "Gaia Compass" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E6BFB8115ACBBAB00101AC9;
+			productRefGroup = 7E6BFB8D15ACBBAB00101AC9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E6BFB8B15ACBBAB00101AC9 /* Gaia Compass */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E6BFB8A15ACBBAB00101AC9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6BFB9B15ACBBAB00101AC9 /* InfoPlist.strings in Resources */,
+				7E6BFBA715ACBBAB00101AC9 /* GCViewController_iPhone.xib in Resources */,
+				7E6BFBAA15ACBBAB00101AC9 /* GCViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E6BFB8815ACBBAB00101AC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E6BFB9D15ACBBAB00101AC9 /* main.m in Sources */,
+				7E6BFBA115ACBBAB00101AC9 /* GCAppDelegate.m in Sources */,
+				7E6BFBA415ACBBAB00101AC9 /* GCViewController.m in Sources */,
+				7E6BFBB415ACBED800101AC9 /* GCGPSController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E6BFB9915ACBBAB00101AC9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E6BFB9A15ACBBAB00101AC9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E6BFBA515ACBBAB00101AC9 /* GCViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E6BFBA615ACBBAB00101AC9 /* en */,
+			);
+			name = GCViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		7E6BFBA815ACBBAB00101AC9 /* GCViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E6BFBA915ACBBAB00101AC9 /* en */,
+			);
+			name = GCViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E6BFBAB15ACBBAB00101AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E6BFBAC15ACBBAB00101AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E6BFBAE15ACBBAB00101AC9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gaia Compass/Gaia Compass-Prefix.pch";
+				INFOPLIST_FILE = "Gaia Compass/Gaia Compass-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E6BFBAF15ACBBAB00101AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Gaia Compass/Gaia Compass-Prefix.pch";
+				INFOPLIST_FILE = "Gaia Compass/Gaia Compass-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E6BFB8615ACBBAB00101AC9 /* Build configuration list for PBXProject "Gaia Compass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6BFBAB15ACBBAB00101AC9 /* Debug */,
+				7E6BFBAC15ACBBAB00101AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E6BFBAD15ACBBAB00101AC9 /* Build configuration list for PBXNativeTarget "Gaia Compass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E6BFBAE15ACBBAB00101AC9 /* Debug */,
+				7E6BFBAF15ACBBAB00101AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E6BFB8315ACBBAB00101AC9 /* Project object */;
+}
