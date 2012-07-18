@@ -19,6 +19,7 @@
 		7E6BFBB115ACBD7700101AC9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6BFBB015ACBD7700101AC9 /* QuartzCore.framework */; };
 		7E6BFBB415ACBED800101AC9 /* GCGPSController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6BFBB315ACBED800101AC9 /* GCGPSController.m */; };
 		7E6BFBB615ACBEEC00101AC9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E6BFBB515ACBEEC00101AC9 /* CoreLocation.framework */; };
+		7E6BFBBC15B257BD00101AC9 /* GCGPSControllerWithHeading in Resources */ = {isa = PBXBuildFile; fileRef = 7E6BFBBB15B257BD00101AC9 /* GCGPSControllerWithHeading */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		7E6BFBB215ACBED800101AC9 /* GCGPSController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCGPSController.h; sourceTree = "<group>"; };
 		7E6BFBB315ACBED800101AC9 /* GCGPSController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCGPSController.m; sourceTree = "<group>"; };
 		7E6BFBB515ACBEEC00101AC9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7E6BFBBB15B257BD00101AC9 /* GCGPSControllerWithHeading */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GCGPSControllerWithHeading; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				7E6BFB9715ACBBAB00101AC9 /* Supporting Files */,
 				7E6BFBB215ACBED800101AC9 /* GCGPSController.h */,
 				7E6BFBB315ACBED800101AC9 /* GCGPSController.m */,
+				7E6BFBBB15B257BD00101AC9 /* GCGPSControllerWithHeading */,
 			);
 			path = "Gaia Compass";
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				7E6BFB9B15ACBBAB00101AC9 /* InfoPlist.strings in Resources */,
 				7E6BFBA715ACBBAB00101AC9 /* GCViewController_iPhone.xib in Resources */,
 				7E6BFBAA15ACBBAB00101AC9 /* GCViewController_iPad.xib in Resources */,
+				7E6BFBBC15B257BD00101AC9 /* GCGPSControllerWithHeading in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +308,7 @@
 				7E6BFBAF15ACBBAB00101AC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

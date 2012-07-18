@@ -35,10 +35,17 @@
 
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading {
+    
+    NSLog(@"didUpdateToHeading: %@", newHeading);
 
+    [locationManager startUpdatingHeading];
     // post a notification that we got a heading
     NSLog(@"didUpdateHeading: %@", newHeading);
     // put the notification line in here
+    [[NSNotificationCenter defaultCenter]postNotificationNAme:@"NEW_HEADING" object:CLHeading];
+    
+    
+    
 }
 
 @end
