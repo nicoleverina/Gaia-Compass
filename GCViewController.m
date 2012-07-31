@@ -15,11 +15,16 @@
 @end
 
 @implementation GCViewController
-@synthesize headingLabel;
+@synthesize headingLabel, textHeadingLabel;
 
 - (void) updateHeadingLabel:(NSNotification*)note {
     CLLocation *newLocation = note.object;
-    self.headingLabel.text = [NSString stringWithFormat:@"%@", newLocation];
+    double lat = newLocation.coordinate.latitude;
+    double lon = newLocation.coordinate.longitude;
+    
+    
+    self.headingLabel.text = [NSString stringWithFormat:@"%f %f", lat,lon];
+    
 }
 
 
@@ -29,7 +34,7 @@
     int labelWidth = 300;
     int labelHeight = 25;
     CGRect headingLabelFrame = CGRectMake(self.view.frame.size.width/2-labelWidth/2,
-                                          self.view.frame.size.height/2-labelHeight/2, 
+                                          self.view.frame.size.height/4-labelHeight/4, 
                                           labelWidth, 
                                           labelHeight);
     self.headingLabel = [[UILabel alloc]initWithFrame:headingLabelFrame];
@@ -42,6 +47,17 @@
                                             selector:@selector(updateHeadingLabel:) 
                                                 name:@"NEW_LOCATION" 
                                               object:nil];
+    
+    CGRect textHeadingLabelFrame = CGRectMake(headingLabelFrame.origin.x, headingLabelFrame.origin.y-headingLabelFrame.size.height-5, headingLabelFrame.size.width, headingLabelFrame.size.height);
+    
+    self.textHeadingLabel = [[UILabel alloc] initWithFrame:textHeadingLabelFrame];
+    self.textHeadingLabel.layer.borderWidth = 1;
+    self.textHeadingLabel.layer.borderColor = [[UIColor blueColor] CGColor];
+    self.textHeadingLabel.textAlignment = UITextAlignmentCenter;
+    self.textHeadingLabel.text = [NSString stringWithFormat:@"Your Current Location"];
+    
+    [self.view addSubview:textHeadingLabel];
+    
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

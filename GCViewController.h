@@ -14,4 +14,7 @@
 
 @property(nonatomic, strong) UILabel *headingLabel; 
 
+@property (nonatomic, strong) UILabel *textHeadingLabel;
+
+
 @end
